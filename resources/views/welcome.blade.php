@@ -48,33 +48,30 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
     <!-- Header -->
-    <header class="fixed top-0 w-full z-50 blur-bg border-b border-gray-200/50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">BN</span>
-                    </div>
-                    <div class="text-xl font-bold gradient-text">Budaya Nusantara</div>
-                </div>
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Program</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Tentang</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Kontak</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Galeri</a>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="https://flagcdn.com/w40/kr.png" alt="Korea" class="w-6 h-4 rounded-sm shadow-sm">
-                        <img src="https://flagcdn.com/w40/jp.png" alt="Jepang" class="w-6 h-4 rounded-sm shadow-sm">
-                    </div>
-                    <button class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2.5 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
-                        Daftar Sekarang
-                    </button>
-                </div>
+   <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200/50">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+            <div class="flex-shrink-0 w-16 h-16 -ml-2"> 
+                <img src="{{ asset('logos.svg') }}" alt="Logo" 
+                     class="w-full h-full object-contain hover:scale-105 transition-transform">
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-6 mx-4"> 
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-900 font-medium py-1 transition-colors whitespace-nowrap">Program</a>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-900 font-medium py-1 transition-colors whitespace-nowrap">Tentang</a>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-900 font-medium py-1 transition-colors whitespace-nowrap">Kontak</a>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-900 font-medium py-1 transition-colors whitespace-nowrap">Galeri</a>
+            </nav>
+
+            <div class="flex-shrink-0 flex items-center space-x-3">
+                <a href="{{ route('register') }}" 
+                   class="text-sm bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-1.5 rounded-lg hover:shadow-md transition-all font-medium whitespace-nowrap">
+                    Daftar Sekarang
+                </a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="pt-32 pb-20 bg-gradient-to-br from-red-50 via-white to-blue-50 relative overflow-hidden">
