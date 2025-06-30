@@ -21,3 +21,5 @@ Route::get('/register', function () {
         'mode' => 'register'
     ]);
 })->name('register');
+
+#test
